@@ -1,0 +1,32 @@
+body{
+    background-color: #6e6e6e;
+    color: #fff;
+}
+footer{
+    position: fixed;
+    top:calc(100vh - 30px);
+    height: 30px;
+    width: 100%;
+    color: #00dbdb;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #6e6e6e;
+}
+footer a {
+    text-decoration: none;
+    color: #00dbdb;
+}
+footer p {
+    border-top: 1px solid #fff;
+    padding: 9px;
+}
+#content {
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.bg-dark {
+    background-color: #6e6e6e !important;
+    border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule "^([^/]+)$" "/index.php?page=$1" [QSA]
+RewriteRule "^([^/]+)/([^/]+)$" "/index.php?page=$1&action=$2" [QSA]
+RewriteRule "^([^/]+)/([^/]+)/([0-9]+)$" "/index.php?page=$1&action=$2&id=$3" [QSA]
